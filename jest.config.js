@@ -1,12 +1,11 @@
 module.exports = {
   clearMocks: true,
-  moduleFileExtensions: ['js', 'ts'],
-  setupFiles: ['<rootDir>/jest.setup.ts'],
-  testEnvironment: 'node',
-  testMatch: ['**/*.test.ts'],
+  moduleFileExtensions: ['js', 'tsx'],
+  testEnvironment: 'jsdom',
+  testMatch: ['**/*.test.tsx'],
   testRunner: 'jest-circus/runner',
   transform: {
-    '^.+\\.ts$': 'ts-jest',
+    '^.+\\.tsx?$': 'ts-jest',
   },
   verbose: true,
   coverageDirectory: '<rootDir>/coverage',

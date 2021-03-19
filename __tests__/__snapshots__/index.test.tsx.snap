@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`useTableIcons should return icons 1`] = `
+exports[`useTableIcons should match snapshot 1`] = `
 <DocumentFragment>
   <svg
     aria-hidden="true"

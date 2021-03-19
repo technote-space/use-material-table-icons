@@ -44,6 +44,11 @@ describe('useTableIcons', () => {
     expect(value.SortArrow).not.toBeUndefined();
     expect(value.ThirdStateCheck).not.toBeUndefined();
     expect(value.ViewColumn).not.toBeUndefined();
+  });
+
+  it('should match snapshot', () => {
+    const {result} = renderHook(() => useTableIcons());
+    const value    = result.current;
 
     const {asFragment, getAllByTestId} = render(<>
       {value.Add && <value.Add data-testid="test-icon"/>}

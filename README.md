@@ -41,7 +41,7 @@ e.g.
 import type {FC} from 'react';
 import {memo} from 'react';
 import MaterialTable from '@technote-space/material-table';
-import useLocalStorage from '@technote-space/use-material-table-icons';
+import useTableIcons from '@technote-space/use-material-table-icons';
 
 const TestTable: FC = memo(() => {
   const tableIcons = useTableIcons();

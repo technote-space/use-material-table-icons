@@ -23,12 +23,42 @@ React hook to get icons for material table.
 </details>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Setup
-### yarn
-- `yarn setup`
-### npm
-- `npm run setup`
+## Usage
+
+### Install
+
+`yarn add @technote-space/use-material-table-icons`
+
+or
+
+`npm i @technote-space/use-material-table-icons`
+
+### Use
+
+e.g.
+
+```tsx
+import type {FC} from 'react';
+import {memo} from 'react';
+import MaterialTable from '@technote-space/material-table';
+import useLocalStorage from '@technote-space/use-material-table-icons';
+
+const TestTable: FC = memo(() => {
+  const tableIcons = useTableIcons();
+
+  // ...
+
+  return <MaterialTable
+    icons={tableIcons}
+    // title={title}
+    // columns={columns}
+    // data={fetchData}
+    // ...
+  />
+});
+```
 
 ## Author
+
 [GitHub (Technote)](https://github.com/technote-space)  
 [Blog](https://technote.space)

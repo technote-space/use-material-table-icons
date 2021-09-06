@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/use-material-table-icons",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "React hook to get icons for material table.",
   "keywords": [
     "github",

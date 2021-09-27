@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/use-material-table-icons",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "React hook to get icons for material table.",
   "keywords": [
     "github",
@@ -29,13 +29,13 @@
     "build": "tsc",
     "cover": "jest --coverage",
     "cover:update": "jest --coverage -u",
+    "postinstall": "[ -n \"$CI\" ] || [ ! -f node_modules/.bin/husky ] || husky install",
     "lint": "eslint 'src/**/*.tsx' '__tests__/**/*.tsx' --cache",
     "lint:fix": "eslint --fix 'src/**/*.tsx' '__tests__/**/*.tsx'",
-    "test": "yarn lint && yarn cover",
-    "update": "npx npm-check-updates -u && yarn install && yarn upgrade && yarn audit",
-    "postinstall": "[ -n \"$CI\" ] || [ ! -f node_modules/.bin/husky ] || husky install",
     "prepublishOnly": "[ -n \"$CI\" ] || [ ! -f node_modules/.bin/pinst ] || pinst --disable",
-    "postpublish": "[ -n \"$CI\" ] || [ ! -f node_modules/.bin/pinst ] || pinst --enable"
+    "postpublish": "[ -n \"$CI\" ] || [ ! -f node_modules/.bin/pinst ] || pinst --enable",
+    "test": "yarn lint && yarn cover",
+    "update": "npx npm-check-updates -u && yarn install && yarn upgrade && yarn audit"
   },
   "dependencies": {},
   "devDependencies": {
